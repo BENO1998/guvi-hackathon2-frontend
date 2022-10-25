@@ -5,7 +5,9 @@ const Home = () => {
   const {userdata,setUserData} = useContext(data)
   console.log(userdata.firstName)
 
-
+const booked=()=>{
+  alert("TICKET BOOKED ENJOY THE MOVIE");
+}
   const logout = ()=>{
     setUserData({})
   }
@@ -110,7 +112,7 @@ const Home = () => {
         >0</span
       >
     </h3>
-
+<button className='btn' onClick={booked}>BOOK TICKET</button>
         <button className='btn' onClick={logout}>Logout</button>
     </div>
   )
