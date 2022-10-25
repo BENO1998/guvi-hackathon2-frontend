@@ -1,0 +1,13 @@
+body{
+ background-image: url(pexels-tima-miroshnichenko-7991486.jpg);
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
