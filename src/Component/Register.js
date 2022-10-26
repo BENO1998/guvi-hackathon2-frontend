@@ -29,7 +29,7 @@ const handleSubmit = async(e)=>{
     const {firstName,lastName,email,password,confirmpassword} = user
     if(firstName && lastName && email && password){
         if(password === confirmpassword){
-            await axios.post("http://localhost:3001/register",user)
+            await axios.post("http://hackathonbeno.herokuapp.com/register",user)
             .then((res) => {
                 alert(res.data.message)
                 navigate("/login")
